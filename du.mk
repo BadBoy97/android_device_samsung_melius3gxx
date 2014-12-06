@@ -15,17 +15,20 @@
 #
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# GSM
+$(call inherit-product, vendor/du/config/gsm.mk)
+
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 $(call inherit-product, device/samsung/melius3gxx/full_melius3gxx.mk)
 
 # product
 PRODUCT_DEVICE := melius3gxx
 PRODUCT_BRAND := Samsung
-PRODUCT_NAME := cm_melius3gxx
+PRODUCT_NAME := du_melius3gxx
 PRODUCT_MODEL := GT-I9200
 PRODUCT_MANUFACTURER := Samsung
 
