@@ -21,5 +21,8 @@ TARGET_OTA_ASSERT_DEVICE := melius3g,melius3gxx,I9200,GT-I9200
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_melius_eur_3g_defconfig
 
+# LIQUID OPTIMIZATIONS
+LIQUIFY := true
+
 # NFC
 BOARD_HAVE_NFC := true
